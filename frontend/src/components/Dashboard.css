@@ -1,0 +1,132 @@
+/* Dashboard CSS styles */
+.dashboard {
+    padding: 2rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dashboard-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Career Planner Styles */
+.career-planner {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.timeline {
+    margin-top: 2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #007bff;
+    border-radius: 50%;
+}
+
+/* Skill Demand Radar Styles */
+.skill-demand-radar {
+    max-width: 100%;
+}
+
+.radar-chart {
+    margin-top: 1rem;
+    height: 400px;
+}
+
+/* Skill Gaps Styles */
+.skill-gaps {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.gap-percentage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 1rem 0;
+}
+
+.skill-gaps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-gaps li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

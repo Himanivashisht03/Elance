@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Remove black focus outline & text cursor everywhere ── */
+* {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, div, section, nav, header, footer,
+button, span, h1, h2, h3, h4, h5, h6,
+p, ul, li, a, label {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Keep normal cursor & selection only in text fields */
+input, textarea, select {
+  outline: none !important;
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
